@@ -8,7 +8,7 @@ class Student {
   final String name;
   final int? age;
   final List<String> nameCourses;
-  final Course courses;
+  final List<Course> courses;
   final Address address;
 
   Student({
@@ -21,14 +21,22 @@ class Student {
   });
 
   Map<String, dynamic> toMap() {
-    return {
-      "id": id,
+    final map = <String, dynamic>{
       "name": name,
-      "age": age,
       "nameCourse": nameCourses,
-      "course": courses,
+      "courses": courses.map((course) => course.toMap()).toList(),
       "address": address
     };
+
+    if (id != null) {
+      map['id'] = id;
+    }
+
+    if (age != null) {
+      map['age'] = age;
+    }
+
+    return map;
   }
 
   String toJson() => jsonEncode(toMap());
@@ -38,8 +46,11 @@ class Student {
       id: map["id"] ?? 0,
       name: map["name"] ?? "",
       age: map["age"] ?? 0,
-      nameCourses: map["nameCourse"] ?? "",
-      courses: map["course"] ?? "",
+      nameCourses: List<String>.from(map["nameCourses"] ?? <String>[]),
+      courses: map["courses"]
+              ?.map<Course>((courseMap) => Course.fromMap(courseMap))
+              .toList() ??
+          <Course>[],
       address: Address.fromMap(map["address"] ?? {}),
     );
   }
