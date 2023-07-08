@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'dart:convert';
+
 class Telephone {
   final int ddd;
   final int phone;
@@ -22,6 +24,10 @@ class Telephone {
     return Telephone(ddd: map["ddd"] ?? 0, phone: map["phone"] ?? 0);
   }
 
+  factory Telephone.fromJson(String json) {
+    final jsonMap = jsonDecode(json);
+    return Telephone.fromMap(jsonMap);
+  }
   factory Telephone.fromJson(String json) {
     final jsonMap = jsonDecode(json);
     return Telephone.fromMap(jsonMap);
