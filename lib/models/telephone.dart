@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 class Telephone {
-  int ddd;
-  int phone;
+  final int ddd;
+  final int phone;
 
   Telephone({
     required this.ddd,
