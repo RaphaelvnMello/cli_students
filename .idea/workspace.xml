@@ -5,23 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="368abd9a-153b-4ec8-8b0d-019eefe91dca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/cli_students.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/scr/commands/students/students_commands.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/scr/repositories/product_repository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cli_studants_api/config.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cli_studants_api/database.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/address.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scr/models/address.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/city.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scr/models/city.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/course.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scr/models/course.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/students.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scr/models/students.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/telephone.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/scr/models/telephone.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/scr/repositories/students_repository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
